@@ -50,6 +50,9 @@ public class App
     {
         if (args.length < 5) {
         	System.err.println("invalid arguments <consumerKey> <consumerSecret> <token> <secret> <terms...>");
+        	for (int i = 0; i < args.length; ++i) {
+        		System.err.println(args[i]);
+        	}
         	System.exit(1);
         }
     	
